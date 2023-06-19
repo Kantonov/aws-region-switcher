@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "AWS Region Switcher",
+    "version": "1.0",
+    "description": "Switch AWS regions in the console.",
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab",
+      "https://*.console.aws.amazon.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://*.console.aws.amazon.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
