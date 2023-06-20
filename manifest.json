@@ -12,9 +12,6 @@
     "host_permissions": [
       "https://*.console.aws.amazon.com/*"
     ],
-    "background": {
-      "service_worker": "background.js"
-    },
     "content_scripts": [
       {
         "matches": ["https://*.console.aws.amazon.com/*"],
